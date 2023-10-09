@@ -1,0 +1,21 @@
+- hosts: localhost
+  become: false 
+  tasks:
+    - name: Install Tmux 
+      homebrew: 
+        name: tmux 
+        state: present
+      tags: 
+        - tools
+#   - name: Install Alacritty 
+#     homebrew: 
+#       name: alacritty 
+#       state: present
+#     tags: 
+#       - tools
+    - name: Install Fish 
+      homebrew: 
+        name: fish 
+        state: present
+      tags: 
+        - tools
