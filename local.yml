@@ -13,9 +13,7 @@
 #       state: present
 #     tags: 
 #       - tools
-    - name: Install Fish 
-      homebrew: 
-        name: fish 
-        state: present
+    - name: Install ohmyzsh 
+      shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
       tags: 
         - tools
